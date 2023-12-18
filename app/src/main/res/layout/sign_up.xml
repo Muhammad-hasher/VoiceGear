@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Phone Number -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_rounded"/>
+
+    <!-- Passport -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:hint="Passport"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_rounded"/>
+
+    <!-- Confirm Password -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:hint="Confirm Password"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_rounded"/>
+
+    <!-- Sign Up Button -->
+
+    <!-- Sign Up with Google -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_rounded"
+        android:text="Sign Up" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:background="@drawable/button_rounded">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_5"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sign Up with Google"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <!-- Already have an account? Login -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Already have an account? Login"/>
+
+</LinearLayout>

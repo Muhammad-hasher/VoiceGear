@@ -54,29 +54,24 @@ public class BluetoothConnectionActivity extends AppCompatActivity {
                 // for ActivityCompat#requestPermissions for more details.
                 return;
             }
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             startActivityForResult(enableBtIntent, 1);
         } else {
             // Bluetooth is enabled, proceed with connection logic
-            // Replace "00:11:22:33:44:55" with the Bluetooth device address you want to connect to
-            String deviceAddress = "00:11:22:33:44:55";
-            BluetoothDevice device = bluetoothAdapter.getRemoteDevice(deviceAddress);
-
             // Add your Bluetooth connection logic here
-            // For example, you might use BluetoothSocket and BluetoothDevice classes
-            try {
-                // UUID should match the UUID of your Bluetooth service
-                // This is just an example UUID, replace it with your actual UUID
-                java.util.UUID uuid = java.util.UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
-                BluetoothSocket socket = device.createRfcommSocketToServiceRecord(uuid);
-                socket.connect();
-                // Now you have a connected Bluetooth socket (socket) that you can use for communication
-                Toast.makeText(this, "Bluetooth connected successfully", Toast.LENGTH_SHORT).show();
-            } catch (Exception e) {
-                // Handle connection errors
-                Toast.makeText(this, "Bluetooth connection failed", Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(this, "Bluetooth is enabled. Implement your connection logic here.", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     // Handle the result of enabling Bluetooth
     @Override

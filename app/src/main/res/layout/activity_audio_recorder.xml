@@ -1,0 +1,39 @@
+<!-- activity_audio_recorder.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AudioRecorderActivity">
+    <TextView
+        android:id="@+id/recordingStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Listening"
+        android:textColor="#BA4D05"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/microphoneImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:onClick="startRecording"
+        android:src="@drawable/img_1"
+        tools:ignore="OnClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/img_2" />
+
+
+</RelativeLayout>
