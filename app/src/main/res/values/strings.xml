@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VoiceGear</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme attributes here -->
+        <item name="colorPrimary">@color/Dark_Grey</item>
+        <item name="colorPrimaryDark">@color/whitish_grey</item>
+        <item name="colorAccent">@color/Orange_pale</item>
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Logo Image in the First Half -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:background="#3A3939"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"/>
+
+    <!-- Privacy Acceptance in the Second Half -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="16dp">
+
+        <!-- Privacy Text and Checkbox -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:text="We value your privacy. Your personal information is treated with the utmost care and confidentiality."
+            android:textSize="16sp"/>
+
+
+        <CheckBox
+            android:id="@+id/privacyCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="I accept the privacy policy"/>
+
+        <!-- I Agree Button -->
+
+        <Button
+            android:id="@+id/agreeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#AE4C09"
+            android:textStyle="bold"
+            android:text="I Agree"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</LinearLayout>
